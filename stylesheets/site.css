@@ -1,0 +1,125 @@
+@import url("whitespace-reset.css");
+html {
+  font: 18px arial, sans-serif; }
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
+header {
+  padding-top: 20px;
+  color: white;
+  width: 100%;
+  height: 100px;
+  background-color: #682860; }
+  header nav {
+    height: 100%; }
+    header nav ul {
+      height: 50%;
+      background-color: black;
+      margin-top: 15px;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end; }
+      header nav ul li {
+        padding: 15px 40px; }
+        header nav ul li a {
+          color: white;
+          text-decoration: none; }
+      header nav ul .active {
+        text-decoration: underline; }
+
+section.home {
+  padding: 20px; }
+  section.home h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #AD49A2;
+    margin-bottom: 20px; }
+  section.home .container {
+    width: 90%;
+    margin: 0 auto; }
+    section.home .container img {
+      width: 100%;
+      height: auto; }
+
+section.purpose {
+  padding: 20px 0; }
+  section.purpose h2 {
+    padding-left: 20px;
+    font-size: 24px;
+    color: #AD49A2;
+    margin-bottom: 20px; }
+  section.purpose .container {
+    background: #682860;
+    display: flex; }
+    section.purpose .container figure {
+      width: 40%; }
+      section.purpose .container figure img {
+        width: 100%;
+        height: 100%;
+        display: block; }
+    section.purpose .container article {
+      width: 60%;
+      padding: 20px;
+      color: white; }
+      section.purpose .container article p {
+        padding-bottom: 15px;
+        text-align: justify;
+        font-size: 18px; }
+
+section.requirements {
+  padding: 20px; }
+  section.requirements h2 {
+    font-size: 24px;
+    color: #AD49A2;
+    margin-bottom: 20px; }
+  section.requirements .container {
+    display: flex;
+    justify-content: space-between; }
+    section.requirements .container .technical, section.requirements .container .non-technical {
+      width: 48%;
+      text-align: justify; }
+      section.requirements .container .technical li, section.requirements .container .non-technical li {
+        margin-bottom: 15px; }
+    section.requirements .container .technical img {
+      display: block;
+      margin: 0 auto;
+      width: 60%;
+      height: auto; }
+
+footer {
+  background-color: #682860;
+  height: 200px;
+  padding: 20px;
+  color: white; }
+  footer h2 {
+    color: white;
+    font-size: 30px; }
+  footer ul {
+    margin: 20px 0;
+    font-size: 24px; }
+    footer ul .underline {
+      text-decoration: underline; }
+    footer ul li {
+      padding-bottom: 20px; }
+      footer ul li a {
+        color: white;
+        text-decoration: none; }
+
+body {
+  background-color: #DBD9BF; }
+
+@media (max-width: 900px) {
+  section.purpose .container {
+    display: block; }
+    section.purpose .container figure {
+      width: 100%; }
+    section.purpose .container article {
+      width: 90%;
+      margin: 0 auto; }
+  section.requirements .technical {
+    display: none; }
+  section.requirements .container .non-technical {
+    width: 90%; } }
